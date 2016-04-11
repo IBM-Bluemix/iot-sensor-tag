@@ -15,10 +15,10 @@
 #
 ---
 applications:
-- name: sensor-tag-demos
+- name: sensation
   memory: 128M
-  host: sensor-tag-demos-${random-word}
+  host: sensation
   domain: mybluemix.net
   command: node app.js
   services:
-  - iot-sensor-tag
+  - iot-anton

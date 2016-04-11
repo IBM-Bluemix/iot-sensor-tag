@@ -137,7 +137,7 @@ SensorData.prototype.setReading = function(type, value) {
 			this[type] = value;
 			accelGraph.updateValue(value);
 			break;
-		case "gyroscope":
+        case "gyroscope":
 			this[type] = value;
 			gyroscopeGraph.updateValue(value);
 			break;

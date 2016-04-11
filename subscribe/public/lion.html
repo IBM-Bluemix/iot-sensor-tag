@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chill the lion</title>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+
+
+    <link rel="stylesheet" href="css/lion.css">
+
+
+
+
+</head>
+
+<body onload="connectFromLocalStorage()">
+
+    <div id="world"></div>
+    <div id="instructions">
+        <br/><span class="lightInstructions"></span>
+        <div class="input-group">
+            <input id="uuid" type="text" class="form-control" placeholder="Device ID">
+            <span class="input-group-btn">
+              <button id="uuidConfirm" class="btn btn-default" type="button" onclick="connectOnClick()">Connect</button>
+            </span>
+        </div>
+    </div>
+
+    <div id="credits">
+        <p> <a href="http://codepen.io/Yakudoo/" target="blank">my other codepens</a> | <a href="http://epic.net" target="blank">epic.net</a>
+        </p>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/264161/OrbitControls.js'></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
+    <script type="text/javascript" src="https://d1fxtkz8shb9d2.cloudfront.net/websocket-multiplex-0.1.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="js/lion.js"></script>
+</body>
+
+</html>
